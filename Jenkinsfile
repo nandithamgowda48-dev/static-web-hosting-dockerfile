@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Creating container') {
             steps {
-                bat 'docker run -d -p 120:80 --name jenkins-docker8 jenkins-docker'
+                bat 'docker run -d -p 125:80 --name jenkins-docker9 jenkins-docker'
             }
         }
         stage('Pushing image to dockerhub') {
